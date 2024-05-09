@@ -9,7 +9,6 @@ BST<std::string> makeTree(const char* filename) {
   BST<std::string> Tree;
   std::ifstream file(filename);
   std::string strfile = "";
-  int count = 0;
   if (!file) {
     std::cout << "Ошибка файла!" << std::endl;
     return Tree;
@@ -26,7 +25,7 @@ BST<std::string> makeTree(const char* filename) {
   std::string temp = "";
   for (int i = 0; i < length; i++) {
     if (strfile[i] >= 'a' && strfile[i] <= 'z') {
-      inWord = true; 
+      inWord = true;
     } else if (strfile[i] == ' ') {
       inWord = false;
     }
