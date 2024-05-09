@@ -25,7 +25,7 @@ BST<std::string> makeTree(const char* filename) {
   std::string temp = "";
   for (int i = 0; i < length; i++) {
     if (strfile[i] >= 'a' && strfile[i] <= 'z') {
-      inWord = true; 
+      inWord = true;
     } else if (strfile[i] == ' ') {
       inWord = false;
     }
